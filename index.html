@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/fd4779e337.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css"  />
+    <title>Music Player</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo" id="logo">
+            <img src="./assets//images/logo.png" alt="">
+            <div class="brandname" id="brandname">
+                Ninja<br><b>Studio</b>
+            </div>
+        </div>
+        <div class="back-btn hidden" id="back-btn">
+            <!-- big left arrow -->
+            <i class="fas fa-arrow-left"></i>
+        </div>
+        <div class="favourites">Favourites</div>
+        <div class="search">
+            <div>
+                <input class="search__input" id="search" type="text" placeholder="Search for songs">
+                <label class="search__icon" for="search">
+                    <i class="fas fa-search"></i>
+                </label>
+            </div>
+            <div class="search__results hidden" id="search__results">
+                <div class="search__results__item">
+                    <img src="https://picsum.photos/50/50?random=21" alt="">
+                    <div class="search__results__item__info">
+                        <div class="search__results__item__title">Onism</div>
+                        <div class="search__results__item__subtext meta">Rishabh Srivastava</div>
+                    </div>
+                </div>
+                <div class="search__results__item">
+                    <img src="https://picsum.photos/50/50?random=21" alt="">
+                    <div class="search__results__item__info">
+                        <div class="search__results__item__title">Onism</div>
+                        <div class="search__results__item__subtext meta">Rishabh Srivastava</div>
+                    </div>
+                </div>
+                <div class="search__results__item">
+                    <img src="https://picsum.photos/50/50?random=21" alt="">
+                    <div class="search__results__item__info">
+                        <div class="search__results__item__title">Onism</div>
+                        <div class="search__results__item__subtext meta">Rishabh Srivastava</div>
+                    </div>
+                </div>
+                <div class="search__results__item">
+                    <img src="https://picsum.photos/50/50?random=21" alt="">
+                    <div class="search__results__item__info">
+                        <div class="search__results__item__title">Onism</div>
+                        <div class="search__results__item__subtext meta">Rishabh Srivastava</div>
+                    </div>
+                </div>
+                <div class="search__results__item">
+                    <img src="https://picsum.photos/50/50?random=21" alt="">
+                    <div class="search__results__item__info">
+                        <div class="search__results__item__title">Onism</div>
+                        <div class="search__results__item__subtext meta">Rishabh Srivastava</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="notification">
+            <i class="fas fa-bell"></i>
+        </div>
+        <div class="profile">
+            <img src="./assets/images/profile.jpg" alt="">
+        </div>
+    </header>
+    <main class="main">
+        <div class="home" id="home">
+            <section class="featured">
+                <div class="featured__container">
+                    <div class="featured__item">
+                        <img src="https://picsum.photos/300/200?random=1" alt="">
+                    </div>
+                    <div class="featured__item">
+                        <img src="https://picsum.photos/300/200?random=2" alt="">
+                    </div>
+                    <div class="featured__item">
+                        <img src="https://picsum.photos/300/200?random=3" alt="">
+                    </div>
+                    <div class="featured__item">
+                        <img src="https://picsum.photos/300/200?random=4" alt="">
+                    </div>
+                    <div class="featured__item">
+                        <img src="https://picsum.photos/300/200?random=5" alt="">
+                    </div>
+                    <div class="featured__item">
+                        <img src="https://picsum.photos/300/200?random=6" alt="">
+                    </div>
+                </div>
+            </section>
+            <section class="latest-releases section">
+                <div class="latest-releases__container section__container">
+                    <div class="latest-releases__header section__header">
+                        <h3 class="latest-releases__title">Latest Releases</h3>
+                    </div>
+                    <div class="latest-releases__content section__content" id="latest-releases__content">
+                    </div>
+                </div>
+            </section>
+            <section class="popular-artists section">
+                <div class="section__container">
+                    <div class="section__header">
+                        <h3>Popular Artists</h3>
+                    </div>
+                    <div class="popular-artists__content single-row-scroll" id="popular-artists-list">
+                    </div>
+                </div>
+            </section>
+            <section class="stations section">
+                <div class="stations__container section__container">
+                    <div class="stations__content single-row-scroll" id="stations__content">
+                        <img class="stations__logo" src="./assets/images/stations/radio.png" alt="">
+                        <div class="stations__item">
+                            <img class="station__item__img round" src="https://picsum.photos/200/200?random=8" alt="">
+                        </div>
+                        <div class="stations__item">
+                            <img class="station__item__img round" src="https://picsum.photos/200/200?random=9" alt="">
+                        </div>
+                        <div class="stations__item">
+                            <img class="station__item__img round" src="https://picsum.photos/200/200?random=10" alt="">
+                        </div>
+                        <div class="stations__item">
+                            <img class="station__item__img round" src="https://picsum.photos/200/200?random=11" alt="">
+                        </div>
+                        <div class="stations__item">
+                            <img class="station__item__img round" src="https://picsum.photos/200/200?random=12" alt="">
+                        </div>
+                        <div class="stations__item">
+                            <img class="station__item__img round" src="https://picsum.photos/200/200?random=12" alt="">
+                        </div>
+                        <div class="stations__item">
+                            <img class="station__item__img round" src="https://picsum.photos/200/200?random=12" alt="">
+                        </div>
+                        <div class="stations__item">
+                            <img class="station__item__img round" src="https://picsum.photos/200/200?random=12" alt="">
+                        </div>
+                        <div class="stations__item">
+                            <img class="station__item__img round" src="https://picsum.photos/200/200?random=12" alt="">
+                        </div>
+                        <div class="stations__item">
+                            <img class="station__item__img round" src="https://picsum.photos/200/200?random=12" alt="">
+                        </div>
+                        <div class="stations__item">
+                            <img class="station__item__img round" src="https://picsum.photos/200/200?random=12" alt="">
+                        </div>
+                        <div class="stations__item">
+                            <img class="station__item__img round" src="https://picsum.photos/200/200?random=12" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="collections section">
+                <div class="collections__container section__container">
+                    <div class="collections__content single-row-scroll" id="collections__content">
+                        
+                    </div>
+                </div>
+            </section>
+            <section class="latest section">
+                <div class="section__header">
+                    <h3>Latest English</h3>
+                </div>
+                <div class="latest__container section__container">
+                    <div class="latest__content single-row-scroll" id="latest__content__english">
+                    </div>
+                </div>
+            </section>
+            <section class="latest section">
+                <div class="section__header">
+                    <h3>Latest Hindi</h3>
+                </div>
+                <div class="latest__container section__container">
+                    <div class="latest__content single-row-scroll" id="latest__content__hindi">
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="playlist hidden" id="playlist">
+            <div class="playlist__hero">
+                <div class="playlist__hero__cover">
+                    <img src="https://picsum.photos/200/200?random=21" alt="">
+                </div>
+                <div class="playlist__hero__body">
+                    <div class="playlist__hero__info">
+                        <div class="playlist__hero__title">
+                            <div class="playlist__hero__title__name" id="artist-name">ColdPlay</div>
+                            <div class="playlist__hero__title__followers meta" id="artist-followers">851 Followers</div>
+                        </div>
+                        <div class="playlist__hero__subtext meta meta"  id="artist-meta">Rishabh Srivastava</div>
+                        <div class="playlist__hero__desc meta" id="artist-bio">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+                    </div>
+                    <div class="playlist__hero__action">
+                        <div class="playlist__hero__action__playall">
+                            <div class="playlist__hero__action__playall__btn  btn btn-primary" id="artist-play">Play All</div>
+                            <span class="playlist__hero__action__playall__meta meta" id="artist-numbers">
+                                247 Tracks | 128 Albums
+                            </span>
+                        </div>
+                        <div class="playlist__hero__action__follow_btn btn btn-transparent">Follow</div>
+                    </div>
+                </div>
+            </div>
+            <section class="list">
+                <div class="list__content" id="artist-tracks">
+                </div>
+            </section>
+        </div>
+    </main>
+    <aside class="sidebar" id="sidebar">
+        <section class="current-playlist list" id="current-playlist">
+            <div class="list__header relative">
+                <span class="list__title">Queue</span>
+                <span class="list__action">
+                    <span class="list__action__name">Queue</span>
+                    <span  id="current-playlist-menu-toggle"><i class="fas fa-chevron-down"></i></span>
+                </span>
+                <!-- show dropdown menu on click of chevron -->
+                <div class="menu hidden" id="current-playlist-menu">
+                    <div class="menu__item">Playlist</div>
+                    <div class="menu__item">Favorite Songs</div>
+                </div>
+            </div>
+            <div class="list__content" id="current-playlist_content">
+                <div class="track">
+                    <div class="track__id meta">
+                        <span class="track__id__num">01</span>
+                        <i class="fas fa-play track__id__play"></i>
+                    </div>
+                    <div class="track__cover">
+                        <img src="https://picsum.photos/200/200?random=21" alt="">
+                        <div class="play-btn"><i class="fas fa-play"></i></div>
+                        <div class="pause-btn"><i class="fa-solid fa-pause"></i></div>
+                    </div>
+                    <div class="track__info">
+                        <div class="track__title">Onism</div>
+                        <div class="track__subtext meta">Rishabh Srivastava</div>
+                    </div>
+                    <div class="track__action">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="track">
+                    <div class="track__id meta">
+                        <span class="track__id__num">01</span>
+                        <i class="fas fa-play track__id__play"></i>
+                    </div>
+                    <div class="track__cover">
+                        <img src="https://picsum.photos/200/200?random=21" alt="">
+                        <div class="play-btn"><i class="fas fa-play"></i></div>
+                        <div class="pause-btn"><i class="fa-solid fa-pause"></i></div>
+                    </div>
+                    <div class="track__info">
+                        <div class="track__title">Onism</div>
+                        <div class="track__subtext meta">Rishabh Srivastava</div>
+                    </div>
+                    <div class="track__action">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="track">
+                    <div class="track__id meta">
+                        <span class="track__id__num">01</span>
+                        <i class="fas fa-play track__id__play"></i>
+                    </div>
+                    <div class="track__cover">
+                        <img src="https://picsum.photos/200/200?random=21" alt="">
+                        <div class="play-btn"><i class="fas fa-play"></i></div>
+                        <div class="pause-btn"><i class="fa-solid fa-pause"></i></div>
+                    </div>
+                    <div class="track__info">
+                        <div class="track__title">Onism</div>
+                        <div class="track__subtext meta">Rishabh Srivastava</div>
+                    </div>
+                    <div class="track__action">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="track">
+                    <div class="track__id meta">
+                        <span class="track__id__num">01</span>
+                        <i class="fas fa-play track__id__play"></i>
+                    </div>
+                    <div class="track__cover">
+                        <img src="https://picsum.photos/200/200?random=21" alt="">
+                        <div class="play-btn"><i class="fas fa-play"></i></div>
+                        <div class="pause-btn"><i class="fa-solid fa-pause"></i></div>
+                    </div>
+                    <div class="track__info">
+                        <div class="track__title">Onism</div>
+                        <div class="track__subtext meta">Rishabh Srivastava</div>
+                    </div>
+                    <div class="track__action">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="track">
+                    <div class="track__id meta">
+                        <span class="track__id__num">01</span>
+                        <i class="fas fa-play track__id__play"></i>
+                    </div>
+                    <div class="track__cover">
+                        <img src="https://picsum.photos/200/200?random=21" alt="">
+                        <div class="play-btn"><i class="fas fa-play"></i></div>
+                        <div class="pause-btn"><i class="fa-solid fa-pause"></i></div>
+                    </div>
+                    <div class="track__info">
+                        <div class="track__title">Onism</div>
+                        <div class="track__subtext meta">Rishabh Srivastava</div>
+                    </div>
+                    <div class="track__action">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="recommendation-lists hidden" id="recommendation-lists">
+            <section class="recommendation-list list">
+                <div class="list__header">
+                    <span class="list__title">Similar Artists</span>
+                    <span class="list__action">
+                        <span class="list__action__name">View All</span>
+                    </span>
+                </div>
+                <div class="list__content" id="similar-artists">
+                    <div class="dtrack playing">
+                        <div class="dtrack__cover relative">
+                            <img src="https://picsum.photos/300/200?random=7" alt="">
+                            <div class="play-btn"><i class="fas fa-play"></i></div>
+                            <div class="pause-btn"><i class="fa-solid fa-pause"></i></div>
+                        </div>
+                        <div class="dtrack__action">
+                            <i class="fas fa-ellipsis-h"></i>
+                        </div>
+                        <div class="dtrack__title">Song Title</div>
+                        <div class="dtrack__date meta">AUG 20, 2020</div>
+                        <div class="dtrack__duration meta">3:20</div>
+                    </div>
+                    <div class="dtrack">
+                        <div class="dtrack__cover relative ">
+                            <img src="https://picsum.photos/300/200?random=7" alt="">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="pause-btn">
+                                <i class="fa-solid fa-pause"></i>
+                            </div>
+                        </div>
+                        <div class="dtrack__action">
+                            <i class="fas fa-ellipsis-h"></i>
+                        </div>
+                        <div class="dtrack__title">Song Title</div>
+                        <div class="dtrack__date meta">AUG 20, 2020</div>
+                        <div class="dtrack__duration meta">3:20</div>
+                    </div>
+                    <div class="dtrack">
+                        <div class="dtrack__cover relative">
+                            <img src="https://picsum.photos/300/200?random=7" alt="">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="pause-btn">
+                                <i class="fa-solid fa-pause"></i>
+                            </div>
+                        </div>
+                        <div class="dtrack__action">
+                            <i class="fas fa-ellipsis-h"></i>
+                        </div>
+                        <div class="dtrack__title">Song Title</div>
+                        <div class="dtrack__date meta">AUG 20, 2020</div>
+                        <div class="dtrack__duration meta">3:20</div>
+                    </div>
+                </div>
+            </section>
+            <section class="recommendation-list list">
+                <div class="list__header">
+                    <span class="list__title">Recently Played</span>
+                    <span class="list__action">
+                        <span class="list__action__name">View All</span>
+                    </span>
+                </div>
+                <div class="list__content" id="recently-played">
+                    <div class="track">
+                        <div class="track__id meta">
+                            <span class="track__id__num">01</span>
+                            <i class="fas fa-play track__id__play"></i>
+                        </div>
+                        <div class="track__cover">
+                            <img src="https://picsum.photos/200/200?random=21" alt="">
+                            <div class="play-btn"><i class="fas fa-play"></i></div>
+                            <div class="pause-btn"><i class="fa-solid fa-pause"></i></div>
+                        </div>
+                        <div class="track__info">
+                            <div class="track__title">Onism</div>
+                            <div class="track__subtext meta">Rishabh Srivastava</div>
+                        </div>
+                        <div class="track__action">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="track">
+                        <div class="track__id meta">
+                            <span class="track__id__num">01</span>
+                            <i class="fas fa-play track__id__play"></i>
+                        </div>
+                        <div class="track__cover">
+                            <img src="https://picsum.photos/200/200?random=21" alt="">
+                            <div class="play-btn"><i class="fas fa-play"></i></div>
+                            <div class="pause-btn"><i class="fa-solid fa-pause"></i></div>
+                        </div>
+                        <div class="track__info">
+                            <div class="track__title">Onism</div>
+                            <div class="track__subtext meta">Rishabh Srivastava</div>
+                        </div>
+                        <div class="track__action">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="track">
+                        <div class="track__id meta">
+                            <span class="track__id__num">01</span>
+                            <i class="fas fa-play track__id__play"></i>
+                        </div>
+                        <div class="track__cover">
+                            <img src="https://picsum.photos/200/200?random=21" alt="">
+                            <div class="play-btn"><i class="fas fa-play"></i></div>
+                            <div class="pause-btn"><i class="fa-solid fa-pause"></i></div>
+                        </div>
+                        <div class="track__info">
+                            <div class="track__title">Onism</div>
+                            <div class="track__subtext meta">Rishabh Srivastava</div>
+                        </div>
+                        <div class="track__action">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="track">
+                        <div class="track__id meta">
+                            <span class="track__id__num">01</span>
+                            <i class="fas fa-play track__id__play"></i>
+                        </div>
+                        <div class="track__cover">
+                            <img src="https://picsum.photos/200/200?random=21" alt="">
+                            <div class="play-btn"><i class="fas fa-play"></i></div>
+                            <div class="pause-btn"><i class="fa-solid fa-pause"></i></div>
+                        </div>
+                        <div class="track__info">
+                            <div class="track__title">Onism</div>
+                            <div class="track__subtext meta">Rishabh Srivastava</div>
+                        </div>
+                        <div class="track__action">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="track">
+                        <div class="track__id meta">
+                            <span class="track__id__num">01</span>
+                            <i class="fas fa-play track__id__play"></i>
+                        </div>
+                        <div class="track__cover">
+                            <img src="https://picsum.photos/200/200?random=21" alt="">
+                            <div class="play-btn"><i class="fas fa-play"></i></div>
+                            <div class="pause-btn"><i class="fa-solid fa-pause"></i></div>
+                        </div>
+                        <div class="track__info">
+                            <div class="track__title">Onism</div>
+                            <div class="track__subtext meta">Rishabh Srivastava</div>
+                        </div>
+                        <div class="track__action">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </aside>
+    <aside class="player" id="player">
+        <div class="player__container">
+            <div class="track">
+                <div class="track__cover">
+                    <img src="https://picsum.photos/200/200?random=21" alt="">
+                </div>
+                <div class="track__info">
+                    <div class="track__title" id="ctl-track-name">Onism</div>
+                    <div class="track__subtext meta" id="ctl-meta">Rishabh Srivastava</div>
+                </div>
+                <div class="track__action">
+                    <i class="far fa-heart"></i>
+                    <i class="fa-regular fa-thumbs-down"></i>
+                </div>
+            </div>
+            <div class="main-controls">
+                <div class="main-controls__container">
+                    <div class="main-controls__item main-controls__shuffle" id="ctl-shuffle">
+                        <i class="fas fa-random"></i>
+                    </div>
+                    <div class="main-controls__item main-controls__backward" id="ctl-prev">
+                        <i class="fas fa-step-backward"></i>
+                    </div>
+                    <div class="main-controls__item main-controls__play" id="ctl-play-pause">
+                        <i class="fa-regular fa-circle-play"></i>
+                    </div>
+                    <div class="main-controls__item main-controls__forward" id="ctl-next">
+                        <i class="fas fa-step-forward"></i>
+                    </div>
+                    <div class="main-controls__item main-controls__repeat" id="ctl-repeat">
+                        <i class="fa-solid fa-repeat"></i>
+                    </div>
+                </div>
+                <div class="main-controls__progress">
+                    <div class="main-controls__progress__time" id="ctl-progress-time">0:00</div>
+                    <input 
+                        class="main-controls__progress__bar"
+                        id="seekbar" 
+                        type="range" 
+                        min="0" 
+                        max="100" 
+                        value="0" 
+                        step=".01"
+                    >
+                    <div class="main-controls__progress__time" id="ctl-duration"></div>
+                </div>
+            </div>
+            <div class="add-controls">
+                <div class="add-controls__container">
+                    <div class="add-controls__item add-controls__playlist" id="ctl-playlist">
+                        <i class="fa-solid fa-list"></i>
+                    </div>
+                    <div class="add-controls__item  add-controls__sound">
+                        <i class="fa-solid fa-volume-high"></i>
+                        <!-- <div class="add-controls__sound__bar">
+                            <div class="add-controls__sound__bar__progress">
+                                <div class="add-controls__sound__bar__progress__knob"></div>
+                            </div>
+                        </div> -->
+                        <input 
+                            class="add-controls__sound__bar"
+                            id="ctl-volume" 
+                            type="range" 
+                            min="0" 
+                            max="100" 
+                            value="0" 
+                            step="1"
+                        >
+
+                    </div>
+                    <div class="add-controls__item  add-controls__expand">
+                        <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <div class="menu hidden" id="track-menu">
+        <div class="menu__item" id="ctl-play-now"><i class="fas fa-play"></i> Play Now</div>
+        <div class="menu__item" id="ctl-add-queue"><i class="fas fa-plus"></i> Add to Queue</div>
+        <div class="menu__item" id="ctl-add-fav"><i class="fas fa-heart"></i> Add to Favorites</div>
+        <div class="menu__item" id="ctl-get-info"><i class="fas fa-info-circle"></i> Get Info</div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/js/all.min.js"></script>
+    
+    <script src="main.js" type="module"></script>
+</body>
+</html>
